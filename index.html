@@ -26,7 +26,7 @@ body.menu-open{overflow:hidden}.drawer-backdrop.open{opacity:1;visibility:visibl
 main{padding:34px 0 44px}.intro{text-align:center;margin:0 auto 22px;max-width:800px}
 .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.23em;font-size:12px;font-weight:600}
 h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
-h1{font-family:Montserrat,Arial,sans-serif;font-size:clamp(31px,4.5vw,46px);font-weight:500;letter-spacing:-.045em;line-height:1.2;margin:8px 0;color:#f2e7dd}
+h1{font-family:Montserrat,Arial,sans-serif;font-size:clamp(29px,4vw,42px);font-weight:500;letter-spacing:-.035em;line-height:1.25;margin:8px 0;color:#f2e7dd}
 .intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:14px}.services-grid[hidden]{display:none}.services-toggle{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;background:rgba(12,12,12,.78);color:#e8d7c7;border:1px solid rgba(200,179,160,.6);padding:13px 25px;font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;cursor:pointer;transition:.2s}.services-toggle:hover{background:rgba(200,179,160,.18);border-color:var(--gold)}.services-toggle span{font-family:Montserrat,sans-serif;font-size:17px}
 .service{min-height:110px;padding:20px 22px;background:rgba(12,12,12,.38);border:1px solid rgba(200,179,160,.24);transition:.25s;cursor:pointer}
@@ -49,20 +49,20 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:3px solid rgba(
 <a class="brand" href="#pradzia" aria-label="Memoris pradžia"><img class="logo-img" src="Logo1.jpg" alt="MEMORIS logotipas"><span class="brand-name">MEMORIS</span></a>
 <button class="menu-button" id="menuButton" aria-label="Atidaryti meniu" aria-expanded="false"><span></span><span></span><span></span></button>
 </div></header>
-<div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><button class="drawer-close" id="drawerClose" aria-label="Uždaryti meniu">×</button></div><a href="#paslaugos" class="drawer-link">Paslaugos</a><a href="#kainos" class="drawer-link">Kainos</a><a href="#kontaktai" class="drawer-link">Kontaktai</a></aside>
+<div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><button class="drawer-close" id="drawerClose" aria-label="Uždaryti meniu">×</button></div><a href="#kainos" class="drawer-link">Kainos</a><a href="#kontaktai" class="drawer-link">Kontaktai</a></aside>
 <main id="pradzia"><div class="wrap">
 <div class="intro" id="paslaugos"><h1>Kapaviečių įrengimas ir priežiūra</h1>
-<p>Padedame sutvarkyti, atnaujinti ar naujai įrengti kapavietes. Dirbame atsakingai, kruopščiai ir siekiame estetiško, ilgaamžio rezultato.</p></div>
+<p>Įrengiame, atnaujiname ir prižiūrime kapavietes. Darbus atliekame atsakingai, kruopščiai, siekdami estetiško ir ilgaamžio rezultato.</p></div>
 <button class="services-toggle" id="servicesToggle" aria-expanded="false" aria-controls="servicesGrid">Paslaugos <span aria-hidden="true">⌄</span></button><div class="services-grid" id="servicesGrid" hidden>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Pagrindo paruošimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Paruošiame tvirtą, kokybišką pagrindą, tinkamą tiek paminklui, tiek kapavietės konstrukcijai.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Granito plokščių montavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Preciziškai montuojame granito plokštes, kad kapavietė būtų estetiška ir ilgaamžė.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Paminklų montavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Patikimai pastatome ir montuojame paminklus, užtikrindami stabilumą ir tvarkingą rezultatą.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Skaldos užpylimas / keitimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Atnaujiname kapavietės skaldos dangą ir pasirūpiname švaria, tvarkinga išvaizda.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Gėlyno zonos formavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Suformuojame gražią ir praktišką vietą gėlėms, priderintą prie kapavietės.</p></article>
-<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Kapavietės priežiūra</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Prižiūrime kapavietę, kad ji išliktų švari, tvarkinga ir graži.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Plokštės nukėlimas ir uždėjimas laidojant</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Nukeliame ir vėl uždedame kapavietės plokštę laidojimo darbų metu.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Reguliari kapavietės priežiūra</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Reguliariai rūpinamės kapavietės švara ir tvarka, pagal susitarimą.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Kapavietės sutvarkymas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Atliekame kapavietės sutvarkymo darbus, kad ji atrodytų tvarkingai ir estetiškai.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Trinkelių klojimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Klojame trinkeles, formuojame tvarkingą ir patvarią kapavietės dangą.</p></article>
 </div></div></main>
 <section class="prices" id="kainos" hidden><div class="wrap"><a href="#pradzia" class="prices-back" id="pricesBack">← Pagrindinis</a><div class="prices-heading"><div class="kicker">Preliminarios</div><h2>Darbų kainos</h2></div><div class="prices-grid">
 <article class="price-card"><h3>Pagrindo paruošimas</h3><div class="price">Nuo 200 €</div></article>
