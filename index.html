@@ -98,7 +98,8 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:3px solid rgba(
  const mainSection=document.querySelector("main"),aboutSection=document.getElementById("apie");
  document.querySelector(".brand").addEventListener("click",event=>{event.preventDefault();setMenu(false);pricesSection.hidden=true;aboutSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  pricesLink.addEventListener("click",event=>{event.preventDefault();setMenu(false);mainSection.hidden=true;aboutSection.hidden=true;pricesSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
- document.getElementById("pricesBack").addEventListener("click",event=>{event.preventDefault();pricesSection.hidden=true;aboutSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});\n document.getElementById("aboutBack").addEventListener("click",event=>{event.preventDefault();aboutSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
+ document.getElementById("pricesBack").addEventListener("click",event=>{event.preventDefault();pricesSection.hidden=true;aboutSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
+ document.getElementById("aboutBack").addEventListener("click",event=>{event.preventDefault();aboutSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  const modal=document.getElementById("messageModal"),openMessage=document.getElementById("openMessage"),closeMessage=document.getElementById("closeMessage");
  function showMessage(open){modal.hidden=!open;if(open){setMenu(false);modal.querySelector("input").focus();}}
  openMessage.addEventListener("click",()=>showMessage(true));closeMessage.addEventListener("click",()=>showMessage(false));modal.addEventListener("click",event=>{if(event.target===modal)showMessage(false);});
