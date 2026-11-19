@@ -1,2 +1,2 @@
 # Memoriswebsite
-Kapaviečių įrengimqs ir priežiūra
+Kapaviečių įrengimas ir priežiūra
