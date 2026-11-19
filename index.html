@@ -65,7 +65,8 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:3px solid rgba(
 <script>
 (()=> {
  const toggle=document.getElementById("servicesToggle"),grid=document.getElementById("servicesGrid");
- toggle.addEventListener("click",()=>{const isOpen=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!isOpen));grid.hidden=isOpen;});\n grid.querySelectorAll(".service-trigger").forEach(btn=>btn.addEventListener("click",()=>{const card=btn.closest(".service"),desc=card.querySelector("p"),open=btn.getAttribute("aria-expanded")==="true";btn.setAttribute("aria-expanded",String(!open));card.classList.toggle("open",!open);desc.hidden=open;}));
+ toggle.addEventListener("click",()=>{const isOpen=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!isOpen));grid.hidden=isOpen;});
+ grid.querySelectorAll(".service-trigger").forEach(btn=>btn.addEventListener("click",()=>{const card=btn.closest(".service"),desc=card.querySelector("p"),open=btn.getAttribute("aria-expanded")==="true";btn.setAttribute("aria-expanded",String(!open));card.classList.toggle("open",!open);desc.hidden=open;}));
  const menuBtn=document.getElementById("menuButton"),drawer=document.getElementById("drawer"),backdrop=document.getElementById("drawerBackdrop"),closeBtn=document.getElementById("drawerClose");
  function setMenu(open){
    drawer.classList.toggle("open",open);backdrop.classList.toggle("open",open);
