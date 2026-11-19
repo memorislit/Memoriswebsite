@@ -27,7 +27,7 @@ main{padding:34px 0 44px}.intro{text-align:center;margin:0 auto 22px;max-width:8
 .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.23em;font-size:12px;font-weight:600}
 h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
 h1{font-family:"Cormorant Garamond",serif;font-size:clamp(36px,4.6vw,50px);font-weight:600;letter-spacing:.01em;line-height:1.15;margin:8px 0;color:#f2e7dd}
-.intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}.guarantee-note{margin:22px auto 0;padding:12px 16px;width:fit-content;max-width:100%;border-top:1px solid rgba(200,179,160,.45);border-bottom:1px solid rgba(200,179,160,.45);color:#e5d3c3;font-size:12px;letter-spacing:.07em}.guarantee-note span{color:var(--gold);padding:0 8px}.contact .guarantee-note{margin:0 auto 30px}
+.intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}.visit-note{margin:15px auto 0;color:#d8c7b7;font-size:12px;letter-spacing:.035em}.guarantee-note{margin:22px auto 0;padding:12px 16px;width:fit-content;max-width:100%;border-top:1px solid rgba(200,179,160,.45);border-bottom:1px solid rgba(200,179,160,.45);color:#e5d3c3;font-size:12px;letter-spacing:.07em}.guarantee-note span{color:var(--gold);padding:0 8px}.contact .guarantee-note{margin:0 auto 30px}
 .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px;margin:22px auto 0;max-width:900px}.services-grid[hidden]{display:none}.services-toggle{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;background:rgba(12,12,12,.78);color:#e8d7c7;border:1px solid rgba(200,179,160,.6);padding:13px 25px;font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;cursor:pointer;transition:.2s}.services-toggle:hover{background:rgba(200,179,160,.18);border-color:var(--gold)}.services-toggle span{font-family:Montserrat,sans-serif;font-size:17px}
 .service{min-height:0;padding:17px 8px;background:transparent;border:0;border-bottom:1px solid rgba(200,179,160,.2);transition:background .25s,border-color .25s;cursor:pointer}
 .service:hover,.service:focus-within{border-color:rgba(200,179,160,.52);background:rgba(200,179,160,.035)}
@@ -58,19 +58,6 @@ figure.work-photo:nth-child(2) details.work-details[open] summary{display:flex;w
 figure.work-photo:nth-child(2) .work-description{margin:20px auto 18px}
 figure.work-photo:nth-child(2) .work-description ul{grid-template-columns:1fr}
 @media(max-width:760px){.work-photos{grid-template-columns:1fr}figure.work-photo:nth-child(2){height:210px!important}figure.work-photo:nth-child(2) details.work-details:not([open]){bottom:8px!important}}
-
-/* Pirmojo ekrano aiškumas ir greiti veiksmai */
-.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:24px auto 22px}
-.hero-action{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:12px 22px;border:1px solid rgba(200,179,160,.72);font:600 12px Montserrat,Arial,sans-serif;letter-spacing:.04em;transition:background .2s,color .2s,border-color .2s}
-.hero-action.primary{background:var(--gold);color:#171311;border-color:var(--gold)}
-.hero-action.secondary{background:rgba(10,10,10,.45);color:#eadfd5}
-.hero-action:hover{background:#e0cbbb;color:#171311;border-color:#e0cbbb}
-.quick-clarity{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:960px;margin:0 auto 26px;text-align:left}
-.clarity-item{padding:15px 17px;background:rgba(8,8,8,.48);border:1px solid rgba(200,179,160,.25);min-width:0}
-.clarity-item .kicker{font-size:10px;letter-spacing:.16em}
-.clarity-item h2{font-size:22px;line-height:1.15;color:#ead9ca;margin:5px 0 6px}
-.clarity-item p{font-size:11px;line-height:1.65;color:#cfc5bb;margin:0}
-@media(max-width:650px){.quick-clarity{grid-template-columns:1fr;gap:8px;margin-bottom:22px}.clarity-item{padding:12px 15px}.clarity-item h2{font-size:21px}.hero-actions{margin:20px auto 18px;gap:9px}.hero-action{flex:1 1 145px;padding:11px 12px;font-size:11px}}
 </style>
 </head>
 <body>
@@ -81,13 +68,7 @@ figure.work-photo:nth-child(2) .work-description ul{grid-template-columns:1fr}
 <div class="drawer-backdrop" id="drawerBackdrop"></div><aside class="drawer" id="drawer" aria-hidden="true"><div class="drawer-head"><button class="drawer-close" id="drawerClose" aria-label="Uždaryti meniu">×</button></div><a href="#apie" class="drawer-link">Apie mus</a><a href="#atliktidarbai" class="drawer-link">Atlikti darbai</a><a href="#kainos" class="drawer-link">Kainos</a></aside>
 <main id="pradzia"><div class="wrap">
 <div class="intro" id="paslaugos"><h1>Kapaviečių įrengimas ir priežiūra</h1>
-<p>Įrengiame naujas kapavietes, atnaujiname senas ir rūpinamės jų priežiūra. Kruopštus darbas, pagarba atminimui ir ilgaamžis rezultatas.</p>
-<div class="hero-actions"><button class="hero-action primary" id="heroWork">Peržiūrėti atliktus darbus</button><a class="hero-action secondary" href="#kontaktai">Susisiekti</a></div></div>
-<div class="quick-clarity" aria-label="Svarbiausia apie MEMORIS">
-<div class="clarity-item"><div class="kicker">Ką darome</div><h2>Įrengiame ir atnaujiname</h2><p>Nuo pamatų ir granito plokščių montavimo iki kapaviečių tvarkymo bei priežiūros.</p></div>
-<div class="clarity-item"><div class="kicker">Kodėl MEMORIS</div><h2>Kruopštumas ir garantija</h2><p>Dirbame atsakingai, skiriame dėmesį detalėms ir savo darbams suteikiame viso gyvenimo garantiją.</p></div>
-<div class="clarity-item"><div class="kicker">Kaip vyksta</div><h2>Paprastai ir aiškiai</h2><p>Susisiekiate, aptariame poreikius, suderiname darbų apimtį bei kainą ir imamės darbų.</p></div>
-</div>
+<p>Įrengiame naujas kapavietes, atnaujiname senas ir atliekame jų priežiūrą. Darbus vykdome atsakingai ir kruopščiai, siekdami estetiško, kokybiško bei ilgaamžio rezultato.</p><div class="visit-note">Nemokamai atvykstame apžiūrėti ir konsultuoti.</div></div>
 <button class="services-toggle" id="servicesToggle" aria-expanded="false" aria-controls="servicesGrid">Paslaugos <span aria-hidden="true">⌄</span></button><div class="services-grid" id="servicesGrid" hidden>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Pamatų liejimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Liejame tvirtus ir patikimus kapavietės pamatus, užtikrinančius konstrukcijos stabilumą ir ilgaamžiškumą.</p></article>
 <article class="service"><button class="service-trigger" aria-expanded="false"><h3>Pamatų atnaujinimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Atnaujiname senus, nusidėvėjusius kapavietės pamatus, sutvarkome jų išvaizdą ir būklę.</p></article>
@@ -140,8 +121,6 @@ figure.work-photo:nth-child(2) .work-description ul{grid-template-columns:1fr}
    if(href==="#atliktidarbai"){event.preventDefault();mainSection.hidden=true;pricesSection.hidden=true;aboutSection.hidden=true;workSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});}
    if(href==="#kontaktai"){mainSection.hidden=false;pricesSection.hidden=true;aboutSection.hidden=true;}
  }));
- const heroWork=document.getElementById("heroWork");
- heroWork.addEventListener("click",()=>{setMenu(false);mainSection.hidden=true;pricesSection.hidden=true;aboutSection.hidden=true;workSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  const pricesLink=drawer.querySelector('a[href="#kainos"]'),pricesSection=document.getElementById("kainos");
  const mainSection=document.querySelector("main"),aboutSection=document.getElementById("apie"),workSection=document.getElementById("atliktidarbai");
  document.querySelector(".brand").addEventListener("click",event=>{event.preventDefault();setMenu(false);pricesSection.hidden=true;aboutSection.hidden=true;workSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
