@@ -17,7 +17,7 @@ html,body{overflow-x:hidden}
 a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:0 auto}
 header{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.78);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,179,160,.2)}
 .header{height:82px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:12px}.logo-img{width:49px;height:50px;object-fit:contain;display:block}.brand-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:31px;letter-spacing:.13em;color:#d0b9a5;line-height:1;font-family:"Cormorant Garamond",serif;font-weight:700}
+.brand{display:flex;align-items:flex-end;gap:12px}.logo-img{width:49px;height:50px;object-fit:contain;display:block}.brand-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:31px;letter-spacing:.13em;color:#d0b9a5;line-height:1;padding-bottom:4px}
 nav{display:none}.menu-button{width:44px;height:44px;border:1px solid rgba(200,179,160,.55);background:rgba(10,10,10,.45);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;cursor:pointer;border-radius:4px;position:relative;z-index:10000;flex-shrink:0}.menu-button span{display:block;width:21px;height:1.5px;background:#e7d8ca;transition:.2s}.menu-button:hover{border-color:var(--gold);background:rgba(200,179,160,.13)}.drawer-backdrop{position:fixed;inset:0;width:100%;height:100%;background:rgba(0,0,0,.12);z-index:9998;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .25s ease,visibility .25s ease}.drawer{position:fixed;right:0;top:0;height:100vh;height:100dvh;width:clamp(190px,25vw,320px);max-width:100%;background:rgba(9,9,9,.18);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);border-left:1px solid rgba(200,179,160,.3);z-index:9999;padding:34px 28px;transform:translateX(110%);transition:transform .3s ease;display:flex;flex-direction:column;gap:26px;visibility:hidden;overflow-y:auto;box-sizing:border-box;pointer-events:none}
 .drawer.open{visibility:visible;transform:translateX(0);pointer-events:auto}
 
@@ -29,10 +29,10 @@ h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
 h1{font-size:clamp(36px,5vw,54px);line-height:1.1;margin:5px 0;color:#f2e7dd}
 .intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:14px}.services-grid[hidden]{display:none}.services-toggle{display:flex;align-items:center;justify-content:center;gap:14px;margin:0 auto;background:rgba(12,12,12,.78);color:#e8d7c7;border:1px solid rgba(200,179,160,.6);padding:13px 25px;font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;cursor:pointer;transition:.2s}.services-toggle:hover{background:rgba(200,179,160,.18);border-color:var(--gold)}.services-toggle span{font-family:Montserrat,sans-serif;font-size:17px}
-.service{min-height:144px;padding:22px 24px;background:rgba(12,12,12,.76);border:1px solid rgba(200,179,160,.22);transition:.25s}
-.service:hover{border-color:rgba(200,179,160,.62);background:rgba(15,13,12,.9)}
-.service h3{font-size:24px;font-weight:600;margin:0 0 7px;color:#e0cbbb;line-height:1.2}
-.service p{font-size:12px;color:#d0c8c0;margin:0;line-height:1.7}
+.service{min-height:110px;padding:20px 22px;background:rgba(12,12,12,.38);border:1px solid rgba(200,179,160,.24);transition:.25s;cursor:pointer}
+.service:hover,.service:focus-within{border-color:rgba(200,179,160,.62);background:rgba(15,13,12,.52)}
+.service h3{font-size:24px;font-weight:600;margin:0;color:#e0cbbb;line-height:1.2}.service-trigger{display:flex;width:100%;align-items:center;justify-content:space-between;gap:12px;text-align:left;padding:0;border:0;background:none;color:inherit;font:inherit;cursor:pointer}.service-trigger .chevron{font-family:Montserrat,sans-serif;font-size:16px;transition:transform .2s;color:var(--gold)}.service.open .chevron{transform:rotate(180deg}
+.service p{font-size:12px;color:#d0c8c0;margin:12px 0 0;line-height:1.7}.service p[hidden]{display:none}
 .contact{padding:40px 0 35px;border-top:1px solid rgba(200,179,160,.22);background:rgba(8,8,8,.65)}
 .contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
 .contact-title h2{font-size:34px;margin:4px 0 0}.contact-title p{color:var(--muted);font-size:13px;margin:7px 0 0}
@@ -53,19 +53,19 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:3px solid rgba(
 <div class="intro" id="paslaugos"><h1>Kapaviečių įrengimas ir priežiūra</h1>
 <p>Padedame sutvarkyti, atnaujinti ar naujai įrengti kapavietes. Dirbame atsakingai, kruopščiai ir siekiame estetiško, ilgaamžio rezultato.</p></div>
 <button class="services-toggle" id="servicesToggle" aria-expanded="false" aria-controls="servicesGrid"><span aria-hidden="true">⌄</span></button><div class="services-grid" id="servicesGrid" hidden>
-<article class="service"><h3>Pagrindo paruošimas</h3></article>
-<article class="service"><h3>Granito plokščių montavimas</h3></article>
-<article class="service"><h3>Paminklų montavimas</h3></article>
-<article class="service"><h3>Skaldos užpylimas / keitimas</h3></article>
-<article class="service"><h3>Gėlyno zonos formavimas</h3></article>
-<article class="service"><h3>Kapavietės priežiūra</h3></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Pagrindo paruošimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p hidden>Paruošiame tvirtą, kokybišką pagrindą, tinkamą tiek paminklui, tiek kapavietės konstrukcijai.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Granito plokščių montavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p>Preciziškai montuojame granito plokštes, kad kapavietė būtų estetiška ir ilgaamžė.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Paminklų montavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p>Patikimai pastatome ir montuojame paminklus, užtikrindami stabilumą ir tvarkingą rezultatą.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Skaldos užpylimas / keitimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p>Atnaujiname kapavietės skaldos dangą ir pasirūpiname švaria, tvarkinga išvaizda.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Gėlyno zonos formavimas</h3><span class="chevron" aria-hidden="true">⌄</span></button><p>Suformuojame gražią ir praktišką vietą gėlėms, priderintą prie kapavietės.</p></article>
+<article class="service"><button class="service-trigger" aria-expanded="false"><h3>Kapavietės priežiūra</h3><span class="chevron" aria-hidden="true">⌄</span></button><p>Prižiūrime kapavietę, kad ji išliktų švari, tvarkinga ir graži.</p></article>
 </div></div></main>
 <section class="contact" id="kontaktai"><div class="wrap contact-inner"><div class="contact-title"><div class="kicker">Susisiekite</div><p>Pasitarkime dėl kapavietės įrengimo ar atnaujinimo.</p></div><div class="contact-links"><a class="contact-link" href="tel:+37068008870">+370 680 08870</a><a class="contact-link" href="mailto:info@memoris.lt">info@memoris.lt</a></div></div></section>
 <footer><div class="wrap footer"><div><div class="footer-brand">memoris</div><div>Kapaviečių įrengimas ir priežiūra</div></div><div class="details"><strong>MB Memoris</strong><br>Įmonės kodas: 308009463<br>PVM kodas: LT100020368414</div><div>© 2026 MEMORIS</div></div></footer>
 <script>
 (()=> {
  const toggle=document.getElementById("servicesToggle"),grid=document.getElementById("servicesGrid");
- toggle.addEventListener("click",()=>{const isOpen=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!isOpen));grid.hidden=isOpen;});
+ toggle.addEventListener("click",()=>{const isOpen=toggle.getAttribute("aria-expanded")==="true";toggle.setAttribute("aria-expanded",String(!isOpen));grid.hidden=isOpen;});\n grid.querySelectorAll(".service-trigger").forEach(btn=>btn.addEventListener("click",()=>{const card=btn.closest(".service"),desc=card.querySelector("p"),open=btn.getAttribute("aria-expanded")==="true";btn.setAttribute("aria-expanded",String(!open));card.classList.toggle("open",!open);desc.hidden=open;}));
  const menuBtn=document.getElementById("menuButton"),drawer=document.getElementById("drawer"),backdrop=document.getElementById("drawerBackdrop"),closeBtn=document.getElementById("drawerClose");
  function setMenu(open){
    drawer.classList.toggle("open",open);backdrop.classList.toggle("open",open);
