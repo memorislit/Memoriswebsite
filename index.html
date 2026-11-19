@@ -84,7 +84,8 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:3px solid rgba(
  menuBtn.onclick=()=>setMenu(true);closeBtn.onclick=()=>setMenu(false);backdrop.onclick=()=>setMenu(false);
  drawer.querySelectorAll(".drawer-link").forEach(link=>link.onclick=()=>setMenu(false));
  const pricesLink=drawer.querySelector('a[href="#kainos"]'),pricesSection=document.getElementById("kainos");
- const mainSection=document.querySelector("main");\n document.querySelector(".brand").addEventListener("click",event=>{event.preventDefault();setMenu(false);pricesSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
+ const mainSection=document.querySelector("main");
+ document.querySelector(".brand").addEventListener("click",event=>{event.preventDefault();setMenu(false);pricesSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  pricesLink.addEventListener("click",event=>{event.preventDefault();setMenu(false);mainSection.hidden=true;pricesSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  document.getElementById("pricesBack").addEventListener("click",event=>{event.preventDefault();pricesSection.hidden=true;mainSection.hidden=false;window.scrollTo({top:0,behavior:"smooth"});});
  document.addEventListener("keydown",event=>{if(event.key==="Escape")setMenu(false)});
