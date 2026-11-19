@@ -1,37 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="lt">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MEMORIS | Kapaviečių įrengimas ir priežiūra Panevėžyje</title>
-<meta name="description" content="MEMORIS – kapaviečių įrengimas, atnaujinimas ir priežiūra Panevėžyje bei aplink. Granito plokštės, paminklai, skalda, gėlynai.">
+<title>MEMORIS – Kapaviečių įrengimas ir priežiūra</title>
+<meta name="description" content="Kapaviečių įrengimas, atnaujinimas ir priežiūra Panevėžyje bei aplink.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#090909;--panel:#111110;--stone:#262321;--gold:#c6b2a0;--muted:#aaa39d;--white:#eeeae5;--line:#3c3530}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Montserrat,Arial,sans-serif;font-weight:300;letter-spacing:.025em}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
-.wrap{width:min(1180px,calc(100% - 44px));margin:auto}.nav{position:absolute;top:0;left:0;right:0;z-index:4;border-bottom:1px solid #ffffff1b}.nav-inner{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:var(--gold)}.brand-mark{width:35px;height:40px}.brand-name{font-size:20px;letter-spacing:.38em;font-weight:300}.brand small{display:block;font-size:8px;letter-spacing:.23em;margin-top:4px}.links{display:flex;gap:34px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}.links a{color:#ded8d2;transition:.25s}.links a:hover{color:var(--gold)}.menu{display:none}
-.hero{min-height:680px;display:flex;align-items:center;position:relative;background:#111 url('https://images.unsplash.com/photo-1504208434309-c0479f4c9e9a?auto=format&fit=crop&w=2000&q=85') center 55%/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505f2 0%,#050505c9 46%,#05050535 100%),linear-gradient(0deg,#090909 0%,transparent 26%)}.hero-content{position:relative;padding:140px 0 115px;max-width:720px}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.26em;text-transform:uppercase}.hero h1{font-weight:300;font-size:clamp(42px,7vw,78px);letter-spacing:.28em;margin:24px 0 12px}.hero h2{font-weight:300;text-transform:uppercase;letter-spacing:.18em;font-size:clamp(13px,2vw,19px);color:#d8c7b7;margin:0}.rule{height:1px;background:linear-gradient(90deg,var(--gold),transparent);max-width:520px;margin:30px 0}.hero p{color:#c3bcb6;max-width:520px;line-height:1.9;font-size:14px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 24px;border:1px solid var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.2em;transition:.25s}.btn.primary{background:var(--gold);color:#0a0908}.btn:hover{background:#eee0d2;color:#111}
-section{padding:105px 0}.section-head{margin-bottom:42px}.section-head .eyebrow{margin-bottom:15px}.section-head h2{font-size:clamp(28px,4vw,42px);font-weight:300;letter-spacing:.1em;margin:0}.section-head p{color:var(--muted);max-width:620px;line-height:1.85;font-size:14px;margin-top:20px}
-.services{background:linear-gradient(180deg,#0a0a0a,#121110)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.service{background:#10100f;padding:34px 28px;min-height:190px}.service .num{color:var(--gold);font-size:11px;letter-spacing:.2em}.service h3{font-weight:400;font-size:15px;letter-spacing:.1em;margin:20px 0 12px}.service p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.about-copy p{font-size:14px;line-height:2;color:#c6c0bb}.about-photo{min-height:420px;background:url('https://images.unsplash.com/photo-1519491050282-5f0e7f9d1b0f?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative}.about-photo:after{content:"";position:absolute;inset:15px;border:1px solid #c6b2a055}
-.gallery{background:#0e0e0d}.gallery-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px}.gallery-card{height:340px;position:relative;overflow:hidden;background:#222}.gallery-card:nth-child(2){height:280px;margin-top:60px}.gallery-card:nth-child(3){height:280px;margin-top:60px}.gallery-card img{width:100%;height:100%;object-fit:cover;filter:brightness(.8);transition:transform .5s}.gallery-card:hover img{transform:scale(1.04)}.gallery-card span{position:absolute;bottom:20px;left:20px;color:white;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
-.contact{background:#171513;background-image:linear-gradient(90deg,#141210ed,#141210c7),url('https://images.unsplash.com/photo-1504208434309-c0479f4c9e9a?auto=format&fit=crop&w=1700&q=80');background-size:cover;background-position:center}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px}.contact p{color:#c8c0b8;line-height:1.9;font-size:14px}.contact-list{margin-top:30px;display:grid;gap:20px}.contact-item{display:flex;gap:15px;align-items:center;color:var(--gold);font-size:14px}.contact-item .symbol{border:1px solid #746355;width:42px;height:42px;display:grid;place-items:center}.contact-item small{display:block;color:#aaa;font-size:9px;letter-spacing:.17em;text-transform:uppercase;margin-bottom:5px}.contact-item span{color:#e8e1d9}
-footer{background:#080808;padding:35px 0;border-top:1px solid #27221e;color:#928a83;font-size:10px;letter-spacing:.08em}.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.company-details{line-height:2}.footer-brand{color:var(--gold);letter-spacing:.3em}
-@media(max-width:800px){.links{gap:16px}.hero{min-height:610px;background-position:65% center}.hero-content{padding-top:130px}.service-grid{grid-template-columns:1fr 1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.about-photo{min-height:330px}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-card,.gallery-card:nth-child(2),.gallery-card:nth-child(3){height:260px;margin:0}.gallery-card:first-child{grid-column:span 2;height:300px}}
-@media(max-width:560px){.nav-inner{height:70px}.links{gap:12px;font-size:9px;letter-spacing:.1em}.brand-name{font-size:16px}.brand small{font-size:7px}.brand-mark{width:28px}.hero h1{letter-spacing:.18em}.hero h2{line-height:1.7}.hero{min-height:600px}.hero:before{background:linear-gradient(90deg,#050505ed,#05050599 75%,#05050550),linear-gradient(0deg,#090909,transparent 28%)}section{padding:75px 0}.service-grid{grid-template-columns:1fr}.service{min-height:150px;padding:26px}.gallery-grid{grid-template-columns:1fr}.gallery-card:first-child{grid-column:auto}.gallery-card,.gallery-card:nth-child(2),.gallery-card:nth-child(3){height:250px}.contact-grid{gap:20px}}
+:root{--gold:#c8b3a0;--text:#f3eee8;--muted:#c2b8ae;--dark:#090909}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--dark);color:var(--text);font-family:Montserrat,Arial,sans-serif;font-weight:500;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:url("IMG_20260603_193646_569.jpg") center center/cover no-repeat}
+body:after{content:"";position:fixed;inset:0;z-index:-1;background:rgba(5,5,5,.82);backdrop-filter:blur(1.5px)}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,calc(100% - 36px));margin:0 auto}
+header{position:sticky;top:0;z-index:10;background:rgba(6,6,6,.8);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,179,160,.2)}
+.header{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:13px}
+.logo{width:39px;height:44px;display:block;flex:none}
+.brand-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:30px;letter-spacing:.12em;color:#d0b9a5;line-height:1}
+nav{display:flex;gap:30px}nav a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#e6ded6;transition:color .2s}nav a:hover{color:var(--gold)}
+main{padding:48px 0 66px}
+.intro{text-align:center;margin:0 auto 34px;max-width:800px}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.25em;font-size:10px;font-weight:600}
+h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.1;margin:8px 0;color:#f2e7dd}
+.intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.service{min-height:144px;padding:22px 24px;background:rgba(12,12,12,.73);border:1px solid rgba(200,179,160,.22);transition:.25s}
+.service:hover{border-color:rgba(200,179,160,.62);background:rgba(15,13,12,.88)}
+.service h3{font-size:23px;margin:0 0 7px;color:#e0cbbb;line-height:1.2}
+.service p{font-size:12px;color:#d0c8c0;margin:0;line-height:1.7}
+.contact{padding:42px 0 34px;border-top:1px solid rgba(200,179,160,.22);background:rgba(8,8,8,.65)}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.contact-title h2{font-size:32px;margin:4px 0 0}
+.contact-title p{color:var(--muted);font-size:13px;margin:7px 0 0}
+.contact-links{display:flex;gap:14px;flex-wrap:wrap}
+.contact-link{border:1px solid rgba(200,179,160,.5);padding:12px 17px;font-size:12px;color:#e9ded4;transition:.2s}
+.contact-link:hover{background:var(--gold);color:#111}
+footer{padding:25px 0 30px;background:rgba(5,5,5,.85);border-top:1px solid rgba(200,179,160,.12);color:#aaa198;font-size:10px}
+.footer{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;flex-wrap:wrap}
+.footer-brand{font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:700;letter-spacing:.13em;color:var(--gold)}
+.details{line-height:1.9}
+@media(max-width:760px){.services-grid{grid-template-columns:1fr 1fr}.contact-inner{align-items:flex-start;flex-direction:column}.contact-links{gap:10px}}
+@media(max-width:520px){.header{height:68px}.logo{width:31px;height:36px}.brand-name{font-size:26px}nav{gap:12px}nav a{font-size:9px;letter-spacing:.08em}.services-grid{grid-template-columns:1fr}.service{min-height:unset;padding:18px 20px}.service h3{font-size:22px}main{padding-top:34px}.intro{margin-bottom:24px}.contact-title h2{font-size:28px}}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap nav-inner">
-<a class="brand" href="#top" aria-label="Memoris pradžia"><svg class="brand-mark" viewBox="0 0 60 65" aria-hidden="true"><path d="M4 60V20a20 20 0 0 1 40 0v40H4Z" fill="#c6b2a0"/><path d="M24 60V26a20 20 0 0 1 32 16v18H24Z" fill="#777" opacity=".58"/></svg><div><div class="brand-name">MEMORIS</div><small>KAPAVIEČIŲ ĮRENGIMAS IR PRIEŽIŪRA</small></div></a>
-<nav class="links"><a href="#paslaugos">Paslaugos</a><a href="#darbai">Atlikti darbai</a><a href="#kontaktai">Kontaktai</a></nav>
+<header><div class="wrap header">
+<a class="brand" href="#pradzia" aria-label="Memoris"><svg class="logo" viewBox="0 0 64 72" aria-hidden="true">
+<path d="M4 68V24C4 10.75 14.75 0 28 0s24 10.75 24 24v44H4Z" fill="#c8b3a0"/>
+<path d="M24 68V30C24 16.75 34.75 6 48 6s12 10.75 12 24v38H24Z" fill="#5d5b5a" opacity=".88"/>
+</svg><span class="brand-name">memoris</span></a>
+<nav aria-label="Pagrindinė navigacija"><a href="#paslaugos">Paslaugos</a><a href="#kontaktai">Kontaktai</a></nav>
 </div></header>
-<main id="top">
-<section class="hero"><div class="wrap hero-content"><div class="eyebrow">Panevėžys · ir aplink</div><h1>MEMORIS</h1><h2>Kapaviečių įrengimas ir priežiūra</h2><div class="rule"></div><p>Profesionalumas · Kokybė · Ilgaamžiškumas</p><p>Rūpestingai kuriame estetiškas, tvarkingas ir ilgaamžes kapavietes – su pagarba prisiminimui.</p><div class="actions"><a class="btn primary" href="#paslaugos">Mūsų paslaugos</a><a class="btn" href="tel:+37068008870">Skambinti</a></div></div></section>
-<section id="paslaugos" class="services"><div class="wrap"><div class="section-head"><div class="eyebrow">Kuo galime padėti</div><h2>Paslaugos</h2><p>Padedame sutvarkyti, atnaujinti ar naujai įrengti kapavietes Panevėžyje ir aplink. Atliekame pagrindo paruošimo, granito plokščių montavimo, paminklų montavimo, skaldos užpylimo/keitimo, gėlyno zonos formavimo ir bendros kapavietės priežiūros darbus. Kiekvieną kapavietę tvarkome atsakingai ir kruopščiai, kad rezultatas būtų estetiškas, tvarkingas ir ilgaamžis.</p></div>
-<div class="service-grid"><article class="service"><div class="num">01</div><h3>PAGRINDO PARUOŠIMAS</h3><p>Paruošiame stabilų ir tinkamą pagrindą kapavietės įrengimui.</p></article><article class="service"><div class="num">02</div><h3>GRANITO PLOKŠTĖS</h3><p>Montuojame granito plokštes, kurių išvaizda ir išdėstymas išlaiko estetiką.</p></article><article class="service"><div class="num">03</div><h3>PAMINKLŲ MONTAVIMAS</h3><p>Tvarkingas ir kruopštus paminklų montavimas.</p></article><article class="service"><div class="num">04</div><h3>SKALDA</h3><p>Skaldos užpylimas, keitimas ir tvarkingos dangos atnaujinimas.</p></article><article class="service"><div class="num">05</div><h3>GĖLYNO ZONA</h3><p>Formuojame gėlyno zoną, pritaikytą kapavietės dizainui.</p></article><article class="service"><div class="num">06</div><h3>PRIEŽIŪRA</h3><p>Padedame palaikyti kapavietės švarą, tvarką ir estetinį vaizdą.</p></article></div></div></section>
-<section><div class="wrap about-grid"><div class="about-copy"><div class="section-head"><div class="eyebrow">Pagarba ir kruopštumas</div><h2>Tvarka, kuri išlieka</h2></div><p>Kapavietė – ypatinga vieta, kurioje saugome brangius prisiminimus. MEMORIS darbus atliekame atidžiai, atsakingai ir su pagarba kiekvienai šeimai.</p><p>Siekiame, kad galutinis rezultatas būtų ne tik gražus šiandien, bet ir patikimas ilgus metus. Konsultuojame, padedame pasirinkti sprendimus ir rūpinamės darbų eiga.</p><a class="btn" href="#kontaktai">Susisiekime</a></div><div class="about-photo" role="img" aria-label="Kapavietės priežiūros aplinka"></div></div></section>
-<section id="darbai" class="gallery"><div class="wrap"><div class="section-head"><div class="eyebrow">Estetika ir ilgaamžiškumas</div><h2>Atlikti darbai</h2><p>Keletas vizualinių pavyzdžių, atspindinčių mūsų darbo kryptį ir kruopštumą. Tikrieji darbų pavyzdžiai bus papildomi galerijoje.</p></div><div class="gallery-grid"><div class="gallery-card"><img src="https://images.unsplash.com/photo-1504208434309-c0479f4c9e9a?auto=format&fit=crop&w=1000&q=80" alt="Akmeninė kapavietė ir žaluma"><span>Akmens estetika</span></div><div class="gallery-card"><img src="https://images.unsplash.com/photo-1519491050282-5f0e7f9d1b0f?auto=format&fit=crop&w=800&q=80" alt="Rami, tvarkinga kapavietės aplinka"><span>Rami aplinka</span></div><div class="gallery-card"><img src="https://images.unsplash.com/photo-1500349814573-8c2b5b4a3c8d?auto=format&fit=crop&w=800&q=80" alt="Natūralaus akmens detalės"><span>Detalės ir priežiūra</span></div></div></div></section>
-<section id="kontaktai" class="contact"><div class="wrap contact-grid"><div><div class="section-head"><div class="eyebrow">Susisiekite su mumis</div><h2>Pasikalbėkime apie kapavietę</h2></div><p>Turite klausimų ar norite aptarti kapavietės įrengimą? Susisiekite – padėsime rasti tinkamą sprendimą.</p></div><div class="contact-list"><a class="contact-item" href="tel:+37068008870"><div class="symbol">☎</div><div><small>Telefonas</small><span>+370 680 08870</span></div></a><a class="contact-item" href="mailto:info@memoris.lt"><div class="symbol">✉</div><div><small>El. paštas</small><span>info@memoris.lt</span></div></a><div class="contact-item"><div class="symbol">f</div><div><small>Facebook</small><span>MEMORIS – Kapaviečių įrengimas ir priežiūra</span></div></div></div></div></section>
-</main>
-<footer><div class="wrap footer-grid"><div><div class="footer-brand">MEMORIS</div><div>Kapaviečių įrengimas ir priežiūra · Panevėžys</div></div><div class="company-details"><strong>MB Memoris</strong><br>Įmonės kodas: 308009463<br>PVM mokėtojo kodas: LT100020368414<br>Registracijos adresas: Liepų al. 24-7, Panevėžys, LT-35121<br>© <span id="year">2026</span> MEMORIS. Visos teisės saugomos.</div><div><a href="https://okredo.com/en-lt/company/mb-memoris-308009463" target="_blank" rel="noopener">Įmonės rekvizitai – Okredo ↗</a></div></div></footer>
+<main id="pradzia"><div class="wrap">
+<div class="intro" id="paslaugos"><div class="kicker">Panevėžys ir aplink</div><h1>Kapaviečių įrengimas ir priežiūra</h1>
+<p>Padedame sutvarkyti, atnaujinti ar naujai įrengti kapavietes. Dirbame atsakingai, kruopščiai ir siekiame estetiško, ilgaamžio rezultato.</p></div>
+<div class="services-grid">
+<article class="service"><h3>Pagrindo paruošimas</h3><p>Paruošiame patikimą ir stabilų pagrindą kapavietės įrengimui.</p></article>
+<article class="service"><h3>Granito plokščių montavimas</h3><p>Montuojame granito plokštes – tvarkingai, kruopščiai ir ilgaamžiškai.</p></article>
+<article class="service"><h3>Paminklų montavimas</h3><p>Profesionalus paminklų pastatymas ir montavimo darbai.</p></article>
+<article class="service"><h3>Skaldos užpylimas / keitimas</h3><p>Atnaujiname dangą, užpilame ar pakeičiame skaldą.</p></article>
+<article class="service"><h3>Gėlyno zonos formavimas</h3><p>Suformuojame estetišką, prie kapavietės derančią gėlyno vietą.</p></article>
+<article class="service"><h3>Kapavietės priežiūra</h3><p>Rūpinamės bendru kapavietės tvarkingumu ir švara.</p></article>
+</div></div></main>
+<section class="contact" id="kontaktai"><div class="wrap contact-inner"><div class="contact-title"><div class="kicker">Susisiekite</div><h2>MEMORIS</h2><p>Pasitarkime dėl kapavietės įrengimo ar atnaujinimo.</p></div><div class="contact-links"><a class="contact-link" href="tel:+37068008870">+370 680 08870</a><a class="contact-link" href="mailto:info@memoris.lt">info@memoris.lt</a></div></div></section>
+<footer><div class="wrap footer"><div><div class="footer-brand">memoris</div><div>Kapaviečių įrengimas ir priežiūra</div></div><div class="details"><strong>MB Memoris</strong><br>Įmonės kodas: 308009463<br>PVM kodas: LT100020368414<br>Registracijos adresas: Liepų al. 24-7, Panevėžys, LT-35121</div><div>© 2026 MEMORIS</div></div></footer>
 </body></html>
