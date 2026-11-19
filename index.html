@@ -8,54 +8,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--gold:#c8b3a0;--text:#f3eee8;--muted:#c2b8ae;--dark:#090909}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--dark);color:var(--text);font-family:Montserrat,Arial,sans-serif;font-weight:500;line-height:1.65}
-body:before{content:"";position:fixed;inset:0;z-index:-2;background:url("IMG_20260603_193646_569.jpg") center center/cover no-repeat}
-body:after{content:"";position:fixed;inset:0;z-index:-1;background:rgba(5,5,5,.82);backdrop-filter:blur(1.5px)}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1080px,calc(100% - 36px));margin:0 auto}
-header{position:sticky;top:0;z-index:10;background:rgba(6,6,6,.8);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,179,160,.2)}
-.header{height:78px;display:flex;align-items:center;justify-content:space-between}
-.brand{display:flex;align-items:center;gap:13px}
-.logo{width:39px;height:44px;display:block;flex:none}
-.brand-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:30px;letter-spacing:.12em;color:#d0b9a5;line-height:1}
-nav{display:flex;gap:30px}nav a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#e6ded6;transition:color .2s}nav a:hover{color:var(--gold)}
-main{padding:48px 0 66px}
-.intro{text-align:center;margin:0 auto 34px;max-width:800px}
-.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.25em;font-size:10px;font-weight:600}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--dark);color:var(--text);font-family:Montserrat,Arial,sans-serif;font-weight:500;line-height:1.65;min-height:100vh}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background-image:url("Fonas2.jpg"),url("Fonas.jpg");background-position:center,center;background-size:cover,cover;background-repeat:no-repeat;background-attachment:fixed,fixed}
+body:after{content:"";position:fixed;inset:0;z-index:-1;background:rgba(4,4,4,.78)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 36px));margin:0 auto}
+header{position:sticky;top:0;z-index:10;background:rgba(5,5,5,.78);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,179,160,.2)}
+.header{height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}.logo-img{width:49px;height:50px;object-fit:contain;display:block}.brand-name{font-family:"Cormorant Garamond",serif;font-weight:700;font-size:31px;letter-spacing:.08em;color:#d0b9a5;line-height:1}
+nav{display:flex;gap:32px}nav a{font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;letter-spacing:.04em;color:#e6ded6;transition:color .2s}nav a:hover{color:var(--gold)}
+main{padding:46px 0 64px}.intro{text-align:center;margin:0 auto 34px;max-width:800px}
+.kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.23em;font-size:10px;font-weight:600}
 h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:600}
-h1{font-size:clamp(34px,5vw,52px);line-height:1.1;margin:8px 0;color:#f2e7dd}
+h1{font-size:clamp(36px,5vw,54px);line-height:1.1;margin:5px 0;color:#f2e7dd}
 .intro p{font-size:14px;color:var(--muted);margin:10px auto 0;max-width:700px}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
-.service{min-height:144px;padding:22px 24px;background:rgba(12,12,12,.73);border:1px solid rgba(200,179,160,.22);transition:.25s}
-.service:hover{border-color:rgba(200,179,160,.62);background:rgba(15,13,12,.88)}
-.service h3{font-size:23px;margin:0 0 7px;color:#e0cbbb;line-height:1.2}
+.service{min-height:144px;padding:22px 24px;background:rgba(12,12,12,.76);border:1px solid rgba(200,179,160,.22);transition:.25s}
+.service:hover{border-color:rgba(200,179,160,.62);background:rgba(15,13,12,.9)}
+.service h3{font-size:24px;font-weight:600;margin:0 0 7px;color:#e0cbbb;line-height:1.2}
 .service p{font-size:12px;color:#d0c8c0;margin:0;line-height:1.7}
-.contact{padding:42px 0 34px;border-top:1px solid rgba(200,179,160,.22);background:rgba(8,8,8,.65)}
+.contact{padding:40px 0 35px;border-top:1px solid rgba(200,179,160,.22);background:rgba(8,8,8,.65)}
 .contact-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
-.contact-title h2{font-size:32px;margin:4px 0 0}
-.contact-title p{color:var(--muted);font-size:13px;margin:7px 0 0}
-.contact-links{display:flex;gap:14px;flex-wrap:wrap}
-.contact-link{border:1px solid rgba(200,179,160,.5);padding:12px 17px;font-size:12px;color:#e9ded4;transition:.2s}
-.contact-link:hover{background:var(--gold);color:#111}
-footer{padding:25px 0 30px;background:rgba(5,5,5,.85);border-top:1px solid rgba(200,179,160,.12);color:#aaa198;font-size:10px}
-.footer{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;flex-wrap:wrap}
-.footer-brand{font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:700;letter-spacing:.13em;color:var(--gold)}
-.details{line-height:1.9}
+.contact-title h2{font-size:34px;margin:4px 0 0}.contact-title p{color:var(--muted);font-size:13px;margin:7px 0 0}
+.contact-links{display:flex;gap:14px;flex-wrap:wrap}.contact-link{border:1px solid rgba(200,179,160,.5);padding:12px 17px;font-size:12px;color:#e9ded4;transition:.2s}.contact-link:hover{background:var(--gold);color:#111}
+footer{padding:25px 0 30px;background:rgba(5,5,5,.86);border-top:1px solid rgba(200,179,160,.12);color:#aaa198;font-size:10px}
+.footer{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;flex-wrap:wrap}.footer-brand{font-family:"Cormorant Garamond",serif;font-size:24px;font-weight:700;letter-spacing:.12em;color:var(--gold)}.details{line-height:1.9}
 @media(max-width:760px){.services-grid{grid-template-columns:1fr 1fr}.contact-inner{align-items:flex-start;flex-direction:column}.contact-links{gap:10px}}
-@media(max-width:520px){.header{height:68px}.logo{width:31px;height:36px}.brand-name{font-size:26px}nav{gap:12px}nav a{font-size:9px;letter-spacing:.08em}.services-grid{grid-template-columns:1fr}.service{min-height:unset;padding:18px 20px}.service h3{font-size:22px}main{padding-top:34px}.intro{margin-bottom:24px}.contact-title h2{font-size:28px}}
+@media(max-width:520px){.header{height:70px}.logo-img{width:39px;height:42px}.brand-name{font-size:27px}nav{gap:17px}nav a{font-size:18px}.services-grid{grid-template-columns:1fr}.service{min-height:unset;padding:18px 20px}.service h3{font-size:23px}main{padding-top:34px}.intro{margin-bottom:24px}.contact-title h2{font-size:29px}}
 </style>
 </head>
 <body>
 <header><div class="wrap header">
-<a class="brand" href="#pradzia" aria-label="Memoris"><svg class="logo" viewBox="0 0 64 72" aria-hidden="true">
-<path d="M4 68V24C4 10.75 14.75 0 28 0s24 10.75 24 24v44H4Z" fill="#c8b3a0"/>
-<path d="M24 68V30C24 16.75 34.75 6 48 6s12 10.75 12 24v38H24Z" fill="#5d5b5a" opacity=".88"/>
-</svg><span class="brand-name">memoris</span></a>
+<a class="brand" href="#pradzia" aria-label="Memoris pradžia"><img class="logo-img" src="Logo1.jpg" alt="MEMORIS logotipas"><span class="brand-name">memoris</span></a>
 <nav aria-label="Pagrindinė navigacija"><a href="#paslaugos">Paslaugos</a><a href="#kontaktai">Kontaktai</a></nav>
 </div></header>
 <main id="pradzia"><div class="wrap">
-<div class="intro" id="paslaugos"><div class="kicker">Panevėžys ir aplink</div><h1>Kapaviečių įrengimas ir priežiūra</h1>
+<div class="intro" id="paslaugos"><h1>Kapaviečių įrengimas ir priežiūra</h1>
 <p>Padedame sutvarkyti, atnaujinti ar naujai įrengti kapavietes. Dirbame atsakingai, kruopščiai ir siekiame estetiško, ilgaamžio rezultato.</p></div>
 <div class="services-grid">
 <article class="service"><h3>Pagrindo paruošimas</h3><p>Paruošiame patikimą ir stabilų pagrindą kapavietės įrengimui.</p></article>
@@ -66,5 +54,5 @@ footer{padding:25px 0 30px;background:rgba(5,5,5,.85);border-top:1px solid rgba(
 <article class="service"><h3>Kapavietės priežiūra</h3><p>Rūpinamės bendru kapavietės tvarkingumu ir švara.</p></article>
 </div></div></main>
 <section class="contact" id="kontaktai"><div class="wrap contact-inner"><div class="contact-title"><div class="kicker">Susisiekite</div><h2>MEMORIS</h2><p>Pasitarkime dėl kapavietės įrengimo ar atnaujinimo.</p></div><div class="contact-links"><a class="contact-link" href="tel:+37068008870">+370 680 08870</a><a class="contact-link" href="mailto:info@memoris.lt">info@memoris.lt</a></div></div></section>
-<footer><div class="wrap footer"><div><div class="footer-brand">memoris</div><div>Kapaviečių įrengimas ir priežiūra</div></div><div class="details"><strong>MB Memoris</strong><br>Įmonės kodas: 308009463<br>PVM kodas: LT100020368414<br>Registracijos adresas: Liepų al. 24-7, Panevėžys, LT-35121</div><div>© 2026 MEMORIS</div></div></footer>
+<footer><div class="wrap footer"><div><div class="footer-brand">memoris</div><div>Kapaviečių įrengimas ir priežiūra</div></div><div class="details"><strong>MB Memoris</strong><br>Įmonės kodas: 308009463<br>PVM kodas: LT100020368414</div><div>© 2026 MEMORIS</div></div></footer>
 </body></html>
